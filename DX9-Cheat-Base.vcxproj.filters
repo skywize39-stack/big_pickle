@@ -1,0 +1,589 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{62a9d1bf-718d-5f67-bc78-156ee25b186a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\config">
+      <UniqueIdentifier>{18583cbe-1c47-5735-8435-28ab845fd82a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core">
+      <UniqueIdentifier>{0c84eef9-bb18-5186-af37-099faf0acea2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\commands">
+      <UniqueIdentifier>{910fd72d-e729-5c04-b236-5c3d3996c4bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\diagnostics">
+      <UniqueIdentifier>{5ab1834c-b677-5205-b379-281e08101458}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\events">
+      <UniqueIdentifier>{a63884db-8d48-5d4e-b395-a06ebbc0fdcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\hooks">
+      <UniqueIdentifier>{c8b99c19-79dd-5720-859f-7c2a29321343}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\prediction">
+      <UniqueIdentifier>{cfe42e0a-dc28-537c-8620-19a2b230fbab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\runtime">
+      <UniqueIdentifier>{c0da1f24-d809-5c2e-8951-1d1950614fe1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features">
+      <UniqueIdentifier>{4a3eb6ab-3d20-5915-901b-b7eca193acd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\combat">
+      <UniqueIdentifier>{465f42e5-8025-5233-89e8-de920bdc9d78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\combat\aimbot">
+      <UniqueIdentifier>{b7093994-afbb-5860-900b-8e614b68622e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\combat\antiaim">
+      <UniqueIdentifier>{d66b191d-3dae-56e8-ab99-6de95b0e9da4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\combat\players">
+      <UniqueIdentifier>{aef00140-51b2-576c-9334-7b94174a7cfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\combat\rage">
+      <UniqueIdentifier>{d8887cde-08d7-506e-b3c2-7c362a74ef0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\combat\triggerbot">
+      <UniqueIdentifier>{e60a93d0-f7e1-5533-82b5-f8662d32d6e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\misc">
+      <UniqueIdentifier>{4db02335-99a5-51e4-9953-c73569e5680a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\misc\clantag">
+      <UniqueIdentifier>{68dcecd4-4863-5022-8c25-0f32c33074a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\misc\killsay">
+      <UniqueIdentifier>{b745d2b3-db7c-5aa6-b3a8-7f8a06cbc1bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\misc\voicekill">
+      <UniqueIdentifier>{a95ca134-f155-5d98-a826-767a87f77efa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\movement">
+      <UniqueIdentifier>{9adea3c9-6946-5c47-828a-b3314909fb09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\movement\autopeek">
+      <UniqueIdentifier>{149e4458-7a3a-5e75-8924-fdc1a904968d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\movement\autostrafe">
+      <UniqueIdentifier>{53e132af-c3ce-5ad7-bad6-2701da8f15ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\networking">
+      <UniqueIdentifier>{58f4a10c-b8d5-5016-a43c-c602a7ada289}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\networking\doubletap">
+      <UniqueIdentifier>{d51403ae-9256-5d10-8068-6601e986afae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\networking\fakelag">
+      <UniqueIdentifier>{b6f8d715-441e-5f83-a9b2-f4b003b6831c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\visuals">
+      <UniqueIdentifier>{60c7467e-cde5-5a77-8a20-6896a9644da3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\visuals\camera">
+      <UniqueIdentifier>{c3e47e49-60c3-5f58-ad54-6db4cac45238}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\visuals\chams">
+      <UniqueIdentifier>{81147d3f-a90c-5187-8007-8030ad3621c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\visuals\esp">
+      <UniqueIdentifier>{e163227e-24e1-5d89-a211-4f622151951e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\visuals\grenades">
+      <UniqueIdentifier>{49cda84a-09b3-527c-83a3-2092e1ae1e78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\visuals\hud">
+      <UniqueIdentifier>{b96e62db-f719-5ebf-a597-4b530ff9e79d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\visuals\smoke">
+      <UniqueIdentifier>{2426dfe2-3413-5717-aec2-d85f772a8901}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\visuals\viewmodel">
+      <UniqueIdentifier>{e07e3e06-e144-5eb3-aadc-d63dd88a6eb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\visuals\world">
+      <UniqueIdentifier>{b3773892-6205-5411-8087-0c3de1ef7cfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\platform">
+      <UniqueIdentifier>{7cb9709d-6c6b-5df8-827e-086ca17f2671}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\platform\windows">
+      <UniqueIdentifier>{a735b0d6-21ea-5170-8e7c-51206a580e4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\render">
+      <UniqueIdentifier>{87102c94-c690-5d5a-ae54-3031ea42457b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\render\surface">
+      <UniqueIdentifier>{60667b7a-a7cb-55c3-834a-2a3970769136}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\resources">
+      <UniqueIdentifier>{08a1ae1c-16eb-5d87-a26d-a7859f419d72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\resources\fonts">
+      <UniqueIdentifier>{70855585-6ee4-5b98-9b61-2aba5363bb63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\resources\menu">
+      <UniqueIdentifier>{0c394bb3-464b-52d7-bf9a-90928920c31b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\sdk">
+      <UniqueIdentifier>{6fcf1606-64c1-5220-ae60-a710036dc3df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\sdk\build">
+      <UniqueIdentifier>{1030e345-715e-5e16-aac5-f210c1700d91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ui">
+      <UniqueIdentifier>{47c93428-7519-53d6-9199-400cbccb2f3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ui\binds">
+      <UniqueIdentifier>{4c7e035f-3762-5f10-a1c5-2eabe6c89854}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ui\menu">
+      <UniqueIdentifier>{7d8cb85c-5e2c-5eaa-8224-53be4e9e606f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\utils">
+      <UniqueIdentifier>{e1479eb9-d156-5b20-8ec5-a0074c3e02d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party">
+      <UniqueIdentifier>{c1e94a2f-e5d9-5264-bf4f-65cf13ca6982}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\MinHook">
+      <UniqueIdentifier>{60643a35-6018-572e-a27d-81dc30460954}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\MinHook\hde">
+      <UniqueIdentifier>{8427c28f-4d26-5694-906c-d4122b65501d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\imgui">
+      <UniqueIdentifier>{29a99e02-2576-5525-9f80-efb5a0ae6c38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\imgui\backends">
+      <UniqueIdentifier>{ca799cfc-559e-50fc-8620-85df53643c7d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\config\Config.hpp">
+      <Filter>src\config</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdk\SDK.hpp">
+      <Filter>src\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdk\Interfaces.hpp">
+      <Filter>src\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdk\GameTypes.hpp">
+      <Filter>src\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="src\platform\windows\Platform.hpp">
+      <Filter>src\platform\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\Math.hpp">
+      <Filter>src\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\Utils.hpp">
+      <Filter>src\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\GlobalVars.hpp">
+      <Filter>src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\hooks\CreateMoveHook.hpp">
+      <Filter>src\core\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\hooks\D3DHook.hpp">
+      <Filter>src\core\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\runtime\FeatureDispatcher.hpp">
+      <Filter>src\core\runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui\menu\Menu.hpp">
+      <Filter>src\ui\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui\menu\SkeetUI.hpp">
+      <Filter>src\ui\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\resources\menu\SkeetAssets.hpp">
+      <Filter>src\resources\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\visuals\esp\ESPTypes.hpp">
+      <Filter>src\features\visuals\esp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\visuals\esp\ESPDraw.hpp">
+      <Filter>src\features\visuals\esp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\visuals\esp\ESPBox.hpp">
+      <Filter>src\features\visuals\esp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\visuals\esp\BoxGeometry.hpp">
+      <Filter>src\features\visuals\esp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\visuals\esp\ESPBars.hpp">
+      <Filter>src\features\visuals\esp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\visuals\esp\ESPText.hpp">
+      <Filter>src\features\visuals\esp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\visuals\esp\ESPSkeleton.hpp">
+      <Filter>src\features\visuals\esp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\visuals\esp\ESPManager.hpp">
+      <Filter>src\features\visuals\esp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\visuals\chams\ChamsMaterials.hpp">
+      <Filter>src\features\visuals\chams</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\visuals\chams\ChamsHook.hpp">
+      <Filter>src\features\visuals\chams</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\visuals\chams\Chams.hpp">
+      <Filter>src\features\visuals\chams</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\combat\aimbot\Aimbot.hpp">
+      <Filter>src\features\combat\aimbot</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\prediction\EnginePrediction.hpp">
+      <Filter>src\core\prediction</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\combat\rage\LagCompensation.hpp">
+      <Filter>src\features\combat\rage</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\combat\rage\Ragebot.hpp">
+      <Filter>src\features\combat\rage</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\combat\rage\AutoStop.hpp">
+      <Filter>src\features\combat\rage</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\movement\autostrafe\AutoStrafe.hpp">
+      <Filter>src\features\movement\autostrafe</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\surface\SurfaceRenderer.hpp">
+      <Filter>src\render\surface</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\combat\aimbot\Penetration.hpp">
+      <Filter>src\features\combat\aimbot</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\combat\triggerbot\Triggerbot.hpp">
+      <Filter>src\features\combat\triggerbot</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\combat\players\PlayerList.hpp">
+      <Filter>src\features\combat\players</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\networking\fakelag\FakeLag.hpp">
+      <Filter>src\features\networking\fakelag</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\networking\fakeduck\FakeDuck.hpp">
+      <Filter>src\features\networking\fakelag</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\networking\doubletap\DoubleTap.hpp">
+      <Filter>src\features\networking\doubletap</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\networking\doubletap\DefensiveDT.hpp">
+      <Filter>src\features\networking\doubletap</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\networking\doubletap\Exploits.hpp">
+      <Filter>src\features\networking\doubletap</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\combat\antiaim\AntiAim.hpp">
+      <Filter>src\features\combat\antiaim</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\visuals\camera\ThirdPerson.hpp">
+      <Filter>src\features\visuals\camera</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\misc\killsay\KillSay.hpp">
+      <Filter>src\features\misc\killsay</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\events\EventLog.hpp">
+      <Filter>src\core\events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui\binds\KeyBinds.hpp">
+      <Filter>src\ui\binds</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui\binds\PixelFont.hpp">
+      <Filter>src\ui\binds</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\misc\voicekill\VoiceKill.hpp">
+      <Filter>src\features\misc\voicekill</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\misc\clantag\ClanTag.hpp">
+      <Filter>src\features\misc\clantag</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\MinHook\buffer.h">
+      <Filter>third_party\MinHook</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\MinHook\hde\hde32.h">
+      <Filter>third_party\MinHook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\MinHook\hde\hde64.h">
+      <Filter>third_party\MinHook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\MinHook\hde\pstdint.h">
+      <Filter>third_party\MinHook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\MinHook\hde\table32.h">
+      <Filter>third_party\MinHook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\MinHook\hde\table64.h">
+      <Filter>third_party\MinHook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\MinHook\minhook.h">
+      <Filter>third_party\MinHook</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\MinHook\trampoline.h">
+      <Filter>third_party\MinHook</Filter>
+    </ClInclude>
+    <ClCompile Include="src\config\Config.cpp">
+      <Filter>src\config</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sdk\Interfaces.cpp">
+      <Filter>src\sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\Utils.cpp">
+      <Filter>src\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\GlobalVars.cpp">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\EntryPoint.cpp">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\hooks\CreateMoveHook.cpp">
+      <Filter>src\core\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\hooks\D3DHook.cpp">
+      <Filter>src\core\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\runtime\FeatureDispatcher.cpp">
+      <Filter>src\core\runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\menu\Menu.cpp">
+      <Filter>src\ui\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\menu\SkeetUI.cpp">
+      <Filter>src\ui\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\visuals\esp\ESPDraw.cpp">
+      <Filter>src\features\visuals\esp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\visuals\esp\ESPBox.cpp">
+      <Filter>src\features\visuals\esp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\visuals\esp\ESPBars.cpp">
+      <Filter>src\features\visuals\esp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\visuals\esp\ESPText.cpp">
+      <Filter>src\features\visuals\esp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\visuals\esp\ESPSkeleton.cpp">
+      <Filter>src\features\visuals\esp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\visuals\esp\ESPManager.cpp">
+      <Filter>src\features\visuals\esp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\visuals\chams\ChamsMaterials.cpp">
+      <Filter>src\features\visuals\chams</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\visuals\chams\ChamsHook.cpp">
+      <Filter>src\features\visuals\chams</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\visuals\chams\Chams.cpp">
+      <Filter>src\features\visuals\chams</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\combat\aimbot\Aimbot.cpp">
+      <Filter>src\features\combat\aimbot</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\prediction\EnginePrediction.cpp">
+      <Filter>src\core\prediction</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\combat\rage\LagCompensation.cpp">
+      <Filter>src\features\combat\rage</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\combat\rage\Ragebot.cpp">
+      <Filter>src\features\combat\rage</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\combat\rage\AutoStop.cpp">
+      <Filter>src\features\combat\rage</Filter>
+    </ClCompile>
+    <ClCompile Include="src\render\surface\SurfaceRenderer.cpp">
+      <Filter>src\render\surface</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\combat\aimbot\Penetration.cpp">
+      <Filter>src\features\combat\aimbot</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\combat\triggerbot\Triggerbot.cpp">
+      <Filter>src\features\combat\triggerbot</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\combat\players\PlayerList.cpp">
+      <Filter>src\features\combat\players</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\networking\fakelag\FakeLag.cpp">
+      <Filter>src\features\networking\fakelag</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\networking\fakeduck\FakeDuck.cpp">
+      <Filter>src\features\networking\fakelag</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\networking\doubletap\DoubleTap.cpp">
+      <Filter>src\features\networking\doubletap</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\networking\doubletap\DefensiveDT.cpp">
+      <Filter>src\features\networking\doubletap</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\networking\doubletap\Exploits.cpp">
+      <Filter>src\features\networking\doubletap</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\combat\antiaim\AntiAim.cpp">
+      <Filter>src\features\combat\antiaim</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\visuals\camera\ThirdPerson.cpp">
+      <Filter>src\features\visuals\camera</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\movement\autopeek\AutoPeek.cpp">
+      <Filter>src\features\movement\autopeek</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\visuals\smoke\NoSmoke.cpp">
+      <Filter>src\features\visuals\smoke</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\movement\autostrafe\AutoStrafe.cpp">
+      <Filter>src\features\movement\autostrafe</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\misc\killsay\KillSay.cpp">
+      <Filter>src\features\misc\killsay</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\events\EventLog.cpp">
+      <Filter>src\core\events</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\binds\KeyBinds.cpp">
+      <Filter>src\ui\binds</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\misc\voicekill\VoiceKill.cpp">
+      <Filter>src\features\misc\voicekill</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\misc\clantag\ClanTag.cpp">
+      <Filter>src\features\misc\clantag</Filter>
+    </ClCompile>
+    <ClCompile Include="third_party\imgui\imgui.cpp">
+      <Filter>third_party\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="third_party\imgui\imgui_draw.cpp">
+      <Filter>third_party\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="third_party\imgui\imgui_tables.cpp">
+      <Filter>third_party\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="third_party\imgui\imgui_widgets.cpp">
+      <Filter>third_party\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="third_party\imgui\backends\imgui_impl_win32.cpp">
+      <Filter>third_party\imgui\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="third_party\imgui\backends\imgui_impl_dx9.cpp">
+      <Filter>third_party\imgui\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="third_party\MinHook\buffer.c">
+      <Filter>third_party\MinHook</Filter>
+    </ClCompile>
+    <ClCompile Include="third_party\MinHook\hde\hde32.c">
+      <Filter>third_party\MinHook\hde</Filter>
+    </ClCompile>
+    <ClCompile Include="third_party\MinHook\hde\hde64.c">
+      <Filter>third_party\MinHook\hde</Filter>
+    </ClCompile>
+    <ClCompile Include="third_party\MinHook\hook.c">
+      <Filter>third_party\MinHook</Filter>
+    </ClCompile>
+    <ClCompile Include="third_party\MinHook\trampoline.c">
+      <Filter>third_party\MinHook</Filter>
+    </ClCompile>
+    <ResourceCompile Include="src\resources\VoiceKill.rc">
+      <Filter>src\resources</Filter>
+    </ResourceCompile>
+    <ClInclude Include="src\core\commands\CommandBuffer.hpp">
+      <Filter>src\core\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\diagnostics\DebugLog.hpp">
+      <Filter>src\core\diagnostics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\combat\aimbot\LagRecord.hpp">
+      <Filter>src\features\combat\aimbot</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\movement\autopeek\AutoPeek.hpp">
+      <Filter>src\features\movement\autopeek</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\visuals\esp\WeaponIcons.hpp">
+      <Filter>src\features\visuals\esp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\visuals\grenades\Grenades.hpp">
+      <Filter>src\features\visuals\grenades</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\visuals\hud\Hud.hpp">
+      <Filter>src\features\visuals\hud</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\visuals\smoke\NoSmoke.hpp">
+      <Filter>src\features\visuals\smoke</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\visuals\viewmodel\Viewmodel.hpp">
+      <Filter>src\features\visuals\viewmodel</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\visuals\world\NightMode.hpp">
+      <Filter>src\features\visuals\world</Filter>
+    </ClInclude>
+    <ClInclude Include="src\resources\fonts\WeaponIconFontData.hpp">
+      <Filter>src\resources\fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdk\ConVars.hpp">
+      <Filter>src\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdk\EngineInterfaces.hpp">
+      <Filter>src\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdk\EngineState.hpp">
+      <Filter>src\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdk\Entities.hpp">
+      <Filter>src\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdk\KeyValues.hpp">
+      <Filter>src\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdk\Materials.hpp">
+      <Filter>src\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdk\Models.hpp">
+      <Filter>src\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdk\Projection.hpp">
+      <Filter>src\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdk\Trace.hpp">
+      <Filter>src\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdk\UserCommand.hpp">
+      <Filter>src\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdk\VFunc.hpp">
+      <Filter>src\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdk\Weapons.hpp">
+      <Filter>src\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdk\WorldEntity.hpp">
+      <Filter>src\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdk\build\CssoBuild.hpp">
+      <Filter>src\sdk\build</Filter>
+    </ClInclude>
+    <ClCompile Include="src\core\commands\CommandBuffer.cpp">
+      <Filter>src\core\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\visuals\grenades\Grenades.cpp">
+      <Filter>src\features\visuals\grenades</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\visuals\hud\Hud.cpp">
+      <Filter>src\features\visuals\hud</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\visuals\viewmodel\Viewmodel.cpp">
+      <Filter>src\features\visuals\viewmodel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\visuals\world\NightMode.cpp">
+      <Filter>src\features\visuals\world</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

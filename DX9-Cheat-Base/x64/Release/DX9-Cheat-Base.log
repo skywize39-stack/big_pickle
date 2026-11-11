@@ -1,0 +1,65 @@
+﻿  Config.cpp
+  Interfaces.cpp
+  Utils.cpp
+  GlobalVars.cpp
+  EntryPoint.cpp
+  CreateMoveHook.cpp
+  D3DHook.cpp
+  FeatureDispatcher.cpp
+  Menu.cpp
+  SkeetUI.cpp
+  ESPDraw.cpp
+  ESPBox.cpp
+  ESPBars.cpp
+  ESPText.cpp
+  ESPSkeleton.cpp
+  ESPManager.cpp
+  ChamsMaterials.cpp
+  ChamsHook.cpp
+  Chams.cpp
+  Aimbot.cpp
+  Компиляция...
+  EnginePrediction.cpp
+  LagCompensation.cpp
+  Ragebot.cpp
+  AutoStop.cpp
+  SurfaceRenderer.cpp
+  Penetration.cpp
+  Triggerbot.cpp
+  PlayerList.cpp
+  FakeLag.cpp
+  FakeDuck.cpp
+  DoubleTap.cpp
+  DefensiveDT.cpp
+  AntiAim.cpp
+  ThirdPerson.cpp
+  AutoPeek.cpp
+  NoSmoke.cpp
+  AutoStrafe.cpp
+  KillSay.cpp
+  EventLog.cpp
+  KeyBinds.cpp
+  Компиляция...
+  VoiceKill.cpp
+  ClanTag.cpp
+  imgui.cpp
+  imgui_draw.cpp
+  imgui_tables.cpp
+  imgui_widgets.cpp
+  imgui_impl_win32.cpp
+  imgui_impl_dx9.cpp
+  CommandBuffer.cpp
+  Grenades.cpp
+  Hud.cpp
+  Viewmodel.cpp
+  NightMode.cpp
+  buffer.c
+  hde32.c
+  hde64.c
+  hook.c
+  trampoline.c
+  Создание кода
+  Previous IPDB not found, fall back to full compilation.
+  All 6175 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Создание кода завершено
+  DX9-Cheat-Base.vcxproj -> C:\Users\Admin\Desktop\csso_fixed44_dt_map_crash_hotfix\csso_fixed44\csso_internal_main\x64\Release\DX9-Cheat-Base.dll

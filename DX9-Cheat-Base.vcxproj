@@ -1,0 +1,311 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{a6f3849a-db53-4586-9808-213292f7af2d}</ProjectGuid>
+    <RootNamespace>DX9CheatBase</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>.\;src\;third_party\imgui;third_party\imgui\backends;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>.\;src\;third_party\imgui;third_party\imgui\backends;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>.\;src\;third_party\imgui;third_party\imgui\backends;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>.\;src\;third_party\imgui;third_party\imgui\backends;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="src\config\Config.hpp" />
+    <ClInclude Include="src\sdk\SDK.hpp" />
+    <ClInclude Include="src\sdk\Interfaces.hpp" />
+    <ClInclude Include="src\sdk\GameTypes.hpp" />
+    <ClInclude Include="src\platform\windows\Platform.hpp" />
+    <ClInclude Include="src\utils\Math.hpp" />
+    <ClInclude Include="src\utils\Utils.hpp" />
+    <ClInclude Include="src\core\GlobalVars.hpp" />
+    <ClInclude Include="src\core\hooks\CreateMoveHook.hpp" />
+    <ClInclude Include="src\core\hooks\D3DHook.hpp" />
+    <ClInclude Include="src\core\runtime\FeatureDispatcher.hpp" />
+    <ClInclude Include="src\ui\menu\Menu.hpp" />
+    <ClInclude Include="src\ui\menu\SkeetUI.hpp" />
+    <ClInclude Include="src\resources\menu\SkeetAssets.hpp" />
+    <ClInclude Include="src\features\visuals\esp\ESPTypes.hpp" />
+    <ClInclude Include="src\features\visuals\esp\ESPDraw.hpp" />
+    <ClInclude Include="src\features\visuals\esp\ESPBox.hpp" />
+    <ClInclude Include="src\features\visuals\esp\BoxGeometry.hpp" />
+    <ClInclude Include="src\features\visuals\esp\ESPBars.hpp" />
+    <ClInclude Include="src\features\visuals\esp\ESPText.hpp" />
+    <ClInclude Include="src\features\visuals\esp\ESPSkeleton.hpp" />
+    <ClInclude Include="src\features\visuals\esp\ESPManager.hpp" />
+    <ClInclude Include="src\features\visuals\chams\ChamsMaterials.hpp" />
+    <ClInclude Include="src\features\visuals\chams\ChamsHook.hpp" />
+    <ClInclude Include="src\features\visuals\chams\Chams.hpp" />
+    <ClInclude Include="src\features\combat\aimbot\Aimbot.hpp" />
+    <ClInclude Include="src\core\prediction\EnginePrediction.hpp" />
+    <ClInclude Include="src\features\combat\rage\LagCompensation.hpp" />
+    <ClInclude Include="src\features\combat\rage\Ragebot.hpp" />
+    <ClInclude Include="src\features\combat\rage\AutoStop.hpp" />
+    <ClInclude Include="src\features\movement\autostrafe\AutoStrafe.hpp" />
+    <ClInclude Include="src\render\surface\SurfaceRenderer.hpp" />
+    <ClInclude Include="src\features\combat\aimbot\Penetration.hpp" />
+    <ClInclude Include="src\features\combat\triggerbot\Triggerbot.hpp" />
+    <ClInclude Include="src\features\combat\players\PlayerList.hpp" />
+    <ClInclude Include="src\features\networking\fakelag\FakeLag.hpp" />
+    <ClInclude Include="src\features\networking\fakeduck\FakeDuck.hpp" />
+    <ClInclude Include="src\features\networking\doubletap\DoubleTap.hpp" />
+    <ClInclude Include="src\features\networking\doubletap\DefensiveDT.hpp" />
+    <ClInclude Include="src\features\networking\doubletap\Exploits.hpp" />
+    <ClInclude Include="src\features\combat\antiaim\AntiAim.hpp" />
+    <ClInclude Include="src\features\visuals\camera\ThirdPerson.hpp" />
+    <ClInclude Include="src\features\misc\killsay\KillSay.hpp" />
+    <ClInclude Include="src\core\events\EventLog.hpp" />
+    <ClInclude Include="src\ui\binds\KeyBinds.hpp" />
+    <ClInclude Include="src\ui\binds\PixelFont.hpp" />
+    <ClInclude Include="src\features\misc\voicekill\VoiceKill.hpp" />
+    <ClInclude Include="src\features\misc\clantag\ClanTag.hpp" />
+    <ClInclude Include="third_party\MinHook\buffer.h" />
+    <ClInclude Include="third_party\MinHook\hde\hde32.h" />
+    <ClInclude Include="third_party\MinHook\hde\hde64.h" />
+    <ClInclude Include="third_party\MinHook\hde\pstdint.h" />
+    <ClInclude Include="third_party\MinHook\hde\table32.h" />
+    <ClInclude Include="third_party\MinHook\hde\table64.h" />
+    <ClInclude Include="third_party\MinHook\minhook.h" />
+    <ClInclude Include="third_party\MinHook\trampoline.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\config\Config.cpp" />
+    <ClCompile Include="src\sdk\Interfaces.cpp" />
+    <ClCompile Include="src\utils\Utils.cpp" />
+    <ClCompile Include="src\core\GlobalVars.cpp" />
+    <ClCompile Include="src\core\EntryPoint.cpp" />
+    <ClCompile Include="src\core\hooks\CreateMoveHook.cpp" />
+    <ClCompile Include="src\core\hooks\D3DHook.cpp" />
+    <ClCompile Include="src\\core\\diagnostics\\Logger.cpp" />
+
+    <ClCompile Include="src\\core\\modules\\Module.cpp" />
+    <ClCompile Include="src\\core\\modules\\BuiltInModules.cpp" />
+
+    <ClCompile Include="src\core\runtime\FeatureDispatcher.cpp" />
+    <ClCompile Include="src\ui\menu\Menu.cpp" />
+    <ClCompile Include="src\ui\menu\SkeetUI.cpp" />
+    <ClCompile Include="src\features\visuals\esp\ESPDraw.cpp" />
+    <ClCompile Include="src\features\visuals\esp\ESPBox.cpp" />
+    <ClCompile Include="src\features\visuals\esp\ESPBars.cpp" />
+    <ClCompile Include="src\features\visuals\esp\ESPText.cpp" />
+    <ClCompile Include="src\features\visuals\esp\ESPSkeleton.cpp" />
+    <ClCompile Include="src\features\visuals\esp\ESPManager.cpp" />
+    <ClCompile Include="src\features\visuals\chams\ChamsMaterials.cpp" />
+    <ClCompile Include="src\features\visuals\chams\ChamsHook.cpp" />
+    <ClCompile Include="src\features\visuals\chams\Chams.cpp" />
+    <ClCompile Include="src\features\combat\aimbot\Aimbot.cpp" />
+    <ClCompile Include="src\core\prediction\EnginePrediction.cpp" />
+    <ClCompile Include="src\features\combat\rage\LagCompensation.cpp" />
+    <ClCompile Include="src\features\combat\rage\Ragebot.cpp" />
+    <ClCompile Include="src\features\combat\rage\AutoStop.cpp" />
+    <ClCompile Include="src\render\surface\SurfaceRenderer.cpp" />
+    <ClCompile Include="src\features\combat\aimbot\Penetration.cpp" />
+    <ClCompile Include="src\features\combat\triggerbot\Triggerbot.cpp" />
+    <ClCompile Include="src\features\combat\players\PlayerList.cpp" />
+    <ClCompile Include="src\features\networking\fakelag\FakeLag.cpp" />
+    <ClCompile Include="src\features\networking\fakeduck\FakeDuck.cpp" />
+    <ClCompile Include="src\features\networking\doubletap\DoubleTap.cpp" />
+    <ClCompile Include="src\features\networking\doubletap\DefensiveDT.cpp" />
+    <ClCompile Include="src\features\networking\doubletap\Exploits.cpp" />
+    <ClCompile Include="src\features\combat\antiaim\AntiAim.cpp" />
+    <ClCompile Include="src\features\visuals\camera\ThirdPerson.cpp" />
+    <ClCompile Include="src\features\movement\autopeek\AutoPeek.cpp" />
+    <ClCompile Include="src\features\visuals\smoke\NoSmoke.cpp" />
+    <ClCompile Include="src\features\movement\autostrafe\AutoStrafe.cpp" />
+    <ClCompile Include="src\features\misc\killsay\KillSay.cpp" />
+    <ClCompile Include="src\core\events\EventLog.cpp" />
+    <ClCompile Include="src\ui\binds\KeyBinds.cpp" />
+    <ClCompile Include="src\features\misc\voicekill\VoiceKill.cpp" />
+    <ClCompile Include="src\features\misc\clantag\ClanTag.cpp" />
+    <ClCompile Include="third_party\imgui\imgui.cpp" />
+    <ClCompile Include="third_party\imgui\imgui_draw.cpp" />
+    <ClCompile Include="third_party\imgui\imgui_tables.cpp" />
+    <ClCompile Include="third_party\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="third_party\imgui\backends\imgui_impl_win32.cpp" />
+    <ClCompile Include="third_party\imgui\backends\imgui_impl_dx9.cpp" />
+    <ClCompile Include="third_party\MinHook\buffer.c" />
+    <ClCompile Include="third_party\MinHook\hde\hde32.c" />
+    <ClCompile Include="third_party\MinHook\hde\hde64.c" />
+    <ClCompile Include="third_party\MinHook\hook.c" />
+    <ClCompile Include="third_party\MinHook\trampoline.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="src\resources\VoiceKill.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\core\commands\CommandBuffer.hpp" />
+    <ClInclude Include="src\core\diagnostics\DebugLog.hpp" />
+    <ClInclude Include="src\features\combat\aimbot\LagRecord.hpp" />
+    <ClInclude Include="src\features\movement\autopeek\AutoPeek.hpp" />
+    <ClInclude Include="src\features\visuals\esp\WeaponIcons.hpp" />
+    <ClInclude Include="src\features\visuals\grenades\Grenades.hpp" />
+    <ClInclude Include="src\features\visuals\hud\Hud.hpp" />
+    <ClInclude Include="src\features\visuals\smoke\NoSmoke.hpp" />
+    <ClInclude Include="src\features\visuals\viewmodel\Viewmodel.hpp" />
+    <ClInclude Include="src\features\visuals\world\NightMode.hpp" />
+    <ClInclude Include="src\resources\fonts\WeaponIconFontData.hpp" />
+    <ClInclude Include="src\sdk\ConVars.hpp" />
+    <ClInclude Include="src\sdk\EngineInterfaces.hpp" />
+    <ClInclude Include="src\sdk\EngineState.hpp" />
+    <ClInclude Include="src\sdk\Entities.hpp" />
+    <ClInclude Include="src\sdk\KeyValues.hpp" />
+    <ClInclude Include="src\sdk\Materials.hpp" />
+    <ClInclude Include="src\sdk\Models.hpp" />
+    <ClInclude Include="src\sdk\Projection.hpp" />
+    <ClInclude Include="src\sdk\Trace.hpp" />
+    <ClInclude Include="src\sdk\UserCommand.hpp" />
+    <ClInclude Include="src\sdk\VFunc.hpp" />
+    <ClInclude Include="src\sdk\Weapons.hpp" />
+    <ClInclude Include="src\sdk\WorldEntity.hpp" />
+    <ClInclude Include="src\sdk\build\CssoBuild.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\core\commands\CommandBuffer.cpp" />
+    <ClCompile Include="src\features\visuals\grenades\Grenades.cpp" />
+    <ClCompile Include="src\features\visuals\hud\Hud.cpp" />
+    <ClCompile Include="src\features\visuals\viewmodel\Viewmodel.cpp" />
+    <ClCompile Include="src\features\visuals\world\NightMode.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

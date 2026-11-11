@@ -1,0 +1,4 @@
+#include <windows.h>
+
+// Embedded PCM WAV used by VoiceKill::OnLocalKill().
+301 RCDATA "mellstroy_voice_input.wav"
